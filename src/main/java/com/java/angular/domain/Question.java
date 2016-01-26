@@ -41,4 +41,8 @@ public class Question {
 			return "Unanswered";
 		}
 	}
+	
+	public Object[] getPossibleChoices() {
+		return answers.values().toArray();
+	}
 }
