@@ -16,9 +16,10 @@ app.run(function ($rootScope, $templateCache) {
 });
 
 
-app.controller('MyCtrl1', ['$scope', 'QuizFactory', function ($scope, QuizFactory) {
-    $scope.bla = 'bla from controller';
+app.controller('QuizController', ['$scope', 'QuizFactory', function ($scope, QuizFactory) {
     QuizFactory.get({}, function (quizFactory) {
         $scope.title = quizFactory.title;
+        $scope.numberofquestions = quizFactory.numberOfQuestions;
+        $scope.questions = quizFactory.questions;
     })
 }]);
