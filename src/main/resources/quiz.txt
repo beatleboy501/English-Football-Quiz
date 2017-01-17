@@ -2,15 +2,20 @@ In What City Should You Live?
 1
 What weather do you prefer?
 Chilly; Windy; Sunny; Humid
+1
 2
 How much do you like crowds?
 A Lot; Somewhat Like; Somewhat Dislike; Not At All
+1
 3
 Which of these do you like eating most?
 NY Strip & Cheesecake; Chicago Deep Dish Pizza; LA Street Tacos; Texas Barbeque
+1
 4
 Which of these are your favorite rappers?
 50 Cent, Notorious B.I.G., Nas, and Jay Z; Kanye West, Lupe Fiasco, Twista, and Common; Snoop Dogg, Tupac, Dr Dre, and Kendrick Lamar; Chamillionaire, Paul Wall, Lil Flip, and Mike Jones
+1
 5
 Which of these are your favorite books?
 Catcher in the Rye, Great Gatsby, West Side Story; The Jungle, The Time Travelers Wife, Native Son; The Big Sleep, Less Than Zero, Ask The Dust; Terms Of Endearment, Rush, Mercy
+1

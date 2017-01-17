@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Quiz {
-	private  String title;
-	private  List<Question> questions;
+	public  String title;
+	public  List<Question> questions;
 
 	public Quiz(String title, Question firstQuestion)
 			throws Exception {

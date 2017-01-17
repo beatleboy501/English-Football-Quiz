@@ -1,12 +1,13 @@
 package com.java.angular.rest;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-
+import com.java.angular.domain.Question;
 import com.java.angular.domain.Quiz;
+import com.java.angular.domain.QuizResult;
 import com.java.angular.service.QuizService;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 
 @Path("/questions")
@@ -18,4 +19,5 @@ public class QuizRestService {
         QuizService quizService = new QuizService();
         return quizService.getDefaultQuiz();
     }
+
 }

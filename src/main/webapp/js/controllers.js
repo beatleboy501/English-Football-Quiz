@@ -15,11 +15,27 @@ app.run(function ($rootScope, $templateCache) {
     });
 });
 
+//app.controller('ResultController', ['$scope', 'ResultFactory', function($scope, ResultFactory) {
+//    ResultFactory.get({}, function(resultFactory) {
+//        $scope.title = resultFactory.title;
+//        $scope.numberofquestions = resultFactory.numberOfQuestions;
+//        $scope.score = resultFactory.score;
+//    })
+//}]);
 
-app.controller('QuizController', ['$scope', 'QuizFactory', function ($scope, QuizFactory) {
+app.controller('QuizController', ['$scope', '$http', 'QuizFactory', function ($scope, $http, QuizFactory) {
     QuizFactory.get({}, function (quizFactory) {
         $scope.title = quizFactory.title;
         $scope.numberofquestions = quizFactory.numberOfQuestions;
         $scope.questions = quizFactory.questions;
+        $scope.submit = function() {
+            $http({
+                url: '/rest/results',
+                method: 'POST',
+                data: { title: $scope.title, questions: $scope.questions }
+            }).success(function (data) {
+                alert('successful');
+            });
+        }
     })
 }]);

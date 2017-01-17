@@ -3,15 +3,17 @@
 </div>
 <div id="container">
 	<h2>{{ numberofquestions }} Questions</h2>
-	<form>
-		<div ng-repeat="question in questions">
+	<form name="quizForm" ng-submit="submit()">
+		<div ng-controller="QuizController" ng-repeat="question in questions">
 			<p class="id">{{ question.id }}.) {{ question.questionText }}</p>
 			<div ng-repeat="choice in question.possibleChoices">
-				<input type="radio" class="radio" ng-attr-name="{{'question' + question.id }}" value="y" /> <label
-					ng-attr-for="{{ 'question' + question.id }}">{{ choice }}</label>
+				<input type="radio" class="radio" ng-attr-name="{{'question' + question.id }}" ng-model="question.userAnswer" ng-required="!question.userAnswer" value="{{ $index + 1 }}"/>
+				<label ng-attr-for="{{ 'question' + question.id }}">{{ choice }}</label>
 			</div>
 		</div>
 		<br><br>
-		<input type="submit" value="See Your Answer" action="#" />
+		<input type="submit" value="Submit Quiz" id="submit" ng-disabled="quizForm.$invalid" />
+		<h3>Your Answers:</h3>
+		<div ng-repeat="q in questions">{{ q.possibleChoices[q.userAnswer - 1] }}</div>
 	</form>
 </div>
