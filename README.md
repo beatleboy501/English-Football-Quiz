@@ -1,5 +1,6 @@
-City Quiz
-  
+<h1>English Football Quiz</h1>
 
-The purpose of this project is to guess your favorite big city in the US based on how you answer a few simple questions, such as what are your favorite foods, etc.
-It's a J2EE web application that has been built with a Java/Spring back-end and an AngularJS front-end. Both front-end and back-end can be built using the Maven pom.xml file which generates a WAR file. The WAR file can be deployed on any Tomcat server (I've tested 6 and newer). I tried to add as many tests as possible, which are also included.
+<p>This Java web application can be used to give short quizzes which can be loaded from any text file. The default quiz is about English Football, seeing as I know so much about it.</p> :wink:
+<br>
+<br>
+<p> The code consists of a simple Java back-end server which provides a REST API using Jackson to the AngularJS front-end client. All the code is bundled into a WAR file and can be served from an Apache Tomcat Server</p>
