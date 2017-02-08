@@ -32,9 +32,9 @@ app.controller('QuizController', ['$scope', '$http', 'QuizFactory', function ($s
             $http({
                 url: '/rest/results',
                 method: 'POST',
-                data: { title: $scope.title, questions: $scope.questions }
+                data: { questions: $scope.questions }
             }).success(function (data) {
-                alert('successful');
+                alert('You scored ' + data + '% on this quiz.');
             });
         }
     })

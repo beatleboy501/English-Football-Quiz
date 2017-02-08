@@ -47,7 +47,7 @@ public class QuizService {
 		return serveThisQuiz;
 	}
 
-	public QuizResult getResult(String title, List<Question> questions) throws Exception {
-		return new QuizResult(title, questions);
+	public QuizResult getResult(List<Question> questions) {
+		return new QuizResult(questions);
 	}
 }

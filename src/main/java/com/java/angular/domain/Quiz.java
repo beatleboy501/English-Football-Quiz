@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Quiz {
+
 	public  String title;
+
 	public  List<Question> questions;
 
 	public Quiz(String title, Question firstQuestion)

@@ -8,7 +8,7 @@
 	<dependencies>
         <!-- javax: XML binding -->
         <dependency>
-            <groupId>javax.xml</groupId>
+            <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
             <version>2.1</version>
         </dependency>

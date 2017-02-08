@@ -4,6 +4,6 @@
 angular.module('quiz', ['quiz.filters', 'quiz.services', 'quiz.directives', 'quiz.controllers']).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'QuizController'});
-        //$routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'ResultController'});
+        $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'QuizController'});
         $routeProvider.otherwise({redirectTo: '/view1'});
     }]);

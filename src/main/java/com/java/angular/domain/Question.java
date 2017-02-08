@@ -13,7 +13,7 @@ public class Question {
 	String[] possibleChoices;
 	String userAnswer;
 	HashMap<Integer, String> answers; // all the possible choices
-	int correctAnswer;
+	private int correctAnswer;
 
 	public Question(int id, String questionText, String[] possibleChoices, int correctAnswer) {
 		this.id = id;
