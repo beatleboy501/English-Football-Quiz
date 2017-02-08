@@ -4,3 +4,7 @@
 <br>
 <br>
 <p> The code consists of a simple Java back-end server which provides a REST API using Jackson to the AngularJS front-end client. All the code is bundled into a WAR file and can be served from an Apache Tomcat Server</p>
+<hr>
+<br>
+<br>
+![Alt text](./screenshot.png?raw=true "English Football Quiz")
