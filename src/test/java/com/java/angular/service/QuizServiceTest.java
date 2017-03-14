@@ -19,7 +19,7 @@ public class QuizServiceTest extends TestCase {
 		QuizService quizService = new QuizService();
 		Quiz quiz = quizService.getDefaultQuiz();
 		Assert.assertNotNull(quiz);
-		Assert.assertEquals("In What City Should You Live?", quiz.getTitle());
+		Assert.assertEquals("English Football Quiz", quiz.getTitle());
 		Assert.assertEquals(5, quiz.getNumberOfQuestions());
 	}
 
