@@ -7,4 +7,6 @@
 <hr>
 <br>
 <br>
-![Alt text](./screenshot.png?raw=true "English Football Quiz")
+<p>Try it out <a href="https://java-angular-football-quiz.herokuapp.com">here</a></p>
+<br>
+![Alt text](./screenshot.png "Optional title")
