@@ -9,4 +9,5 @@
 <br>
 <p>Try it out <a href="https://java-angular-football-quiz.herokuapp.com">here</a></p>
 <br>
-![Alt text](./screenshot.png "Optional title")
+
+![ScreenShot](./screenshot.png)
