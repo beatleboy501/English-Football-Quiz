@@ -7,7 +7,7 @@
 <hr>
 <br>
 <br>
-<p>Try it out <a href="https://java-angular-football-quiz.herokuapp.com">here</a></p>
+<p>Try it out <a href="https://java-angular-football-quiz.herokuapp.com" target="_blank">here</a></p>
 <br>
 
 ![ScreenShot](./screenshot.png)
