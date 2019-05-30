@@ -11,3 +11,10 @@
 <br>
 
 ![ScreenShot](./screenshot.png)
+
+<h2>How to Run Locally</h2>
+1. Install Maven `brew install maven`
+2. Run `mvn clean package`
+3. If all goes well, you will have a `target` directory. Run
+```java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port 8000 --session-store memcache target/*.war```
+4. In your web browser visit `localhost:8000` to take the quiz
