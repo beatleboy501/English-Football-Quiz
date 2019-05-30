@@ -13,6 +13,7 @@
 ![ScreenShot](./screenshot.png)
 
 <h2>How to Run Locally</h2>
+
 1. Install Maven `brew install maven`
 2. Run `mvn clean package`
 3. If all goes well, you will have a `target` directory. Run
